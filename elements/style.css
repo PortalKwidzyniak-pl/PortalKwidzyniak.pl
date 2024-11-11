@@ -22,7 +22,6 @@ header, footer, nav, .left, .right {
 }
 
 header {
-    background-color: #0A2043;
     height: min-content;
     width: 100%;
     color: white;
@@ -30,7 +29,6 @@ header {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 1);
     background-color: #153063;
     height: min-content;
     width: 100%;
@@ -48,7 +46,6 @@ nav {
 
 .left, .right {
     flex: 1;
-    background-color: rgba(28, 64, 115, 0.5);
     padding: 40px 60px;
     color: white;
 }
@@ -58,7 +55,6 @@ nav {
 }
 
 footer {
-    background-color: #0A2043;
     height: min-content;
     width: 100%;
     color: white;
@@ -66,7 +62,6 @@ footer {
 }
 
 .nava {
-    color: rgb(255, 255, 255);
     height: min-content;
     width: 100%;
     font-family: "Roboto", sans-serif;
