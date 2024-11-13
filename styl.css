@@ -1,3 +1,4 @@
+
 /* Reset and Global Styling */
 * {
     margin: 0;
@@ -15,18 +16,17 @@ body, html {
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: black;
     overflow-x: hidden;
 }
 
 /* Header and Nav Styling */
-header, nav, footer, .left, .right {
+header, nav, footer, .lewy, .prawy {
     background-attachment: fixed;
     background-image: url(Kwidzyn.png);
 }
 
 header {
-    width: 90vw; /* Slight padding on each side */
+    width: 100vw; /* Slight padding on each side */
     margin: 0 auto;
     text-align: center;
     padding: 2vh 0; /* Vertical padding */
@@ -35,8 +35,7 @@ header {
 }
 
 nav {
-    background-color: black;
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     text-align: center;
     padding: 1.5vh 0;
@@ -54,7 +53,8 @@ nav {
 }
 
 /* Sidebar Panels */
-.left, .right {
+.lewy, .prawy {
+    text-align: center;
     flex: 1;
     background-color: rgba(28, 64, 115, 0.5);
     padding: 5vw;
@@ -74,7 +74,7 @@ nav {
 /* Footer */
 footer {
     background-color: #0A2043;
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     text-align: center;
     padding: 1.5vh 0;
@@ -96,12 +96,9 @@ footer {
     .container {
         flex-direction: column;
     }
-    .left, .right {
+    .lewy, .prawy {
         width: 100%;
         padding: 5vw 3vw; /* Adjust padding for mobile */
-    }
-    #Inferno-pre-release, #Overview {
-        padding: 8vw 3vw; /* Smaller padding for mobile */
     }
 }
 a {
