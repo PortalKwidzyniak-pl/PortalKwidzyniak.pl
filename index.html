@@ -25,6 +25,16 @@
     <section class="container">
         <section class="lewy">
             <h2>Zapraszamy do Kwidzynia!</h2><br>
+            <div id="wiki-content">
+                
+            </div> 
+            <script> async function fetchWikipediaArticle(title) { const url = `https://pl.wikipedia.org/w/api.php?action=query&prop=extracts&exintro&explaintext&format=json&origin=*&titles=${title}`; 
+                                                                  const response = await fetch(url); 
+                                                                  const data = await response.json(); 
+                                                                  const pages = data.query.pages; 
+                                                                  const page = Object.values(pages)[0]; 
+                                                                  document.getElementById('wiki-content').innerText = page.extract; } // Fetch and display the article for Kwidzyn fetchWikipediaArticle('Kwidzyn'); 
+            </script>
         </section>
         <section class="prawy">
             <div class="mapouter">
