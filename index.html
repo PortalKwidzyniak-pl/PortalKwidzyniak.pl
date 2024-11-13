@@ -24,29 +24,24 @@
     </nav>
     <section class="container">
         <section class="lewy">
-            <h2>Zapraszamy do Kwidzynia!</h2><br>
-            <div id="wiki-content">
-                
-            </div> 
-            <script> async function fetchWikipediaArticle(title) { const url = `https://pl.wikipedia.org/w/api.php?action=query&prop=extracts&exintro&explaintext&format=json&origin=*&titles=${title}`; 
-                                                                  const response = await fetch(url); 
-                                                                  const data = await response.json(); 
-                                                                  const pages = data.query.pages; 
-                                                                  const page = Object.values(pages)[0]; 
-                                                                  document.getElementById('wiki-content').innerText = page.extract; } // Fetch and display the article for Kwidzyn fetchWikipediaArticle('Kwidzyn'); 
-            </script>
+            <h2>Kwidzyń na Wikipedi</h2><br>
+            <iframe src="https://pl.wikipedia.org/wiki/Kwidzyn" width="100%" height="600px"> Your browser does not support iframes. </iframe>
         </section>
         <section class="prawy">
+            <h2>Mapa Kwidzynia</h2><br>
             <div class="mapouter">
                 <div class="gmap_canvas">
                     <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Kwidzyń&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     <a href="https://sprunkin.com/">Sprunki</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}
                     </style>
             </div>
+            <a>
+                <img src="Reklama.png">
+            </a>
         </section>
     </section>
     <footer>
-        <h3>Po więcej informacji discord Lukseh74 albo <a href="https:\\www.ZMKwidzyn.online">Zakłady Mleczarskie Kwidzyń&#8482</a></h3>
+        <h3>Po więcej informacji odwiedź Kwidzyńskie Muzeum Masła&#8482; albo Kwidzyńskie Zakłady Mleczarskie&#8482</h3>
     </footer>
 </body>
 </html>
