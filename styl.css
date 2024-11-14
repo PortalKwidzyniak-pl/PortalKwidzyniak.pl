@@ -103,7 +103,7 @@ footer {
         padding: 5vw 3vw; /* Adjust padding for mobile */
     }
     .srodek {
-        visibility: hidden;
+        visibility: hidden; /* Schowany srodkowy div */
     }
 }
 @media (min-width: 1920px) {
@@ -116,7 +116,7 @@ footer {
     .lewy, .prawy, .srodek {
         width: 33vw;
         padding: 10vw 6vw;
-        visibility: visible;
+        visibility: visible; /* Pokazuje srodkowy div dla ekranow o 1920 pikselach i wiecej szerokosci */
     }
 }
 a {
