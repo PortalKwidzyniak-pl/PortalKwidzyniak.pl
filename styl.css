@@ -50,9 +50,98 @@ nav {
     background-position: center;
     background-size: cover;
 }
+/* Styl ogólny kontenera */
 #article {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: rgba(249, 249, 249, 0.5); /* Lekko przezroczyste tło */
+    padding: 20px;
+}
+
+/* Nagłówki */
+#article h2, #article h3, #article h4 {
+    color: #444;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Linki */
+#article a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+#article a:hover {
+    text-decoration: underline;
+    color: #551a8b;
+}
+
+/* Obrazy */
+#article img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Listy */
+#article ul, #article ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#article li {
+    line-height: 1.6;
+}
+
+/* Tabele */
+#article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Ustawione przezroczyste tło */
+}
+
+#article th, #article td {
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    padding: 8px;
+    text-align: left;
+}
+
+#article th {
+    background-color: rgba(242, 242, 242, 0.5);
+    font-weight: bold;
+}
+
+/* Cytaty i przypisy */
+#article sup {
+    font-size: 0.8em;
+    color: #666;
+}
+
+#article blockquote {
+    border-left: 4px solid rgba(204, 204, 204, 0.5);
+    padding-left: 10px;
+    margin: 10px 0;
+    color: #555;
+    font-style: italic;
+    background-color: rgba(248, 248, 248, 0.5);
+}
+
+/* Justowanie tekstu */
+#article p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja specjalnych elementów, jak infoboxy */
+#article .infobox {
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 0.5);
+    margin: 15px 0;
+}
 }
 .srodek {
     display: none;
