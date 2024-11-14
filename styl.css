@@ -184,6 +184,9 @@ footer {
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
+    * {
+    clear:both;
+    }
     header, nav, footer {
         width: 100vw;
     }
