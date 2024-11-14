@@ -1,4 +1,3 @@
-
 /* Reset and Global Styling */
 * {
     margin: 0;
@@ -91,13 +90,13 @@ footer {
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     header, nav, footer {
-        width: 90vw;
+        width: 100vw;
     }
     .container {
         flex-direction: column;
     }
     .lewy, .prawy {
-        width: 100%;
+        width: 100vw;
         padding: 5vw 3vw; /* Adjust padding for mobile */
     }
 }
