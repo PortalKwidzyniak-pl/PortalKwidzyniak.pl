@@ -50,6 +50,9 @@ nav {
     background-position: center;
     background-size: cover;
 }
+.srodek {
+    visibility: hidden;
+}
 
 /* Sidebar Panels */
 .lewy, .prawy {
@@ -98,6 +101,22 @@ footer {
     .lewy, .prawy {
         width: 100vw;
         padding: 5vw 3vw; /* Adjust padding for mobile */
+    }
+    .srodek {
+        visibility: hidden;
+    }
+}
+@media (min-width: 1920px) {
+    header, nav, footer {
+        width: 100vw;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .lewy, .prawy, .srodek {
+        width: 33vw;
+        padding: 10vw 6vw;
+        visibility: visible;
     }
 }
 a {
