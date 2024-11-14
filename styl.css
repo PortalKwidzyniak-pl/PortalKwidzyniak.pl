@@ -50,6 +50,10 @@ nav {
     background-position: center;
     background-size: cover;
 }
+#article {
+    background-color: white;
+    color: black;
+}
 .srodek {
     display: none;
 }
