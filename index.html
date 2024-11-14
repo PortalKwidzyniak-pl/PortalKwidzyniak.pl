@@ -44,7 +44,7 @@
         var markup = data.parse.text["*"];
         var blurb = $('<div></div>').html(markup);
 
-        // Update image URLs to be absolute so they load correctly
+        // Fix image URLs to load images correctly
         blurb.find('img').each(function() {
             var src = $(this).attr('src');
             if (src && src.startsWith("//")) {
@@ -54,7 +54,21 @@
             }
         });
 
-        // Insert the content into the HTML
+        // Update links to point to Wikipedia
+        blurb.find('a').each(function() {
+            var href = $(this).attr('href');
+            if (href && href.startsWith("/wiki")) {
+                $(this).attr('href', "https://pl.wikipedia.org" + href);
+                $(this).attr('target', '_blank'); // Opens Wikipedia links in a new tab
+            }
+        });
+
+        // Remove references or sources marked as "[online]"
+        blurb.find("sup").filter(function() {
+            return $(this).text().includes("[online]");
+        }).remove();
+
+        // Insert the cleaned content into the HTML
         $('#article').html(blurb);
       },
       error: function () {
