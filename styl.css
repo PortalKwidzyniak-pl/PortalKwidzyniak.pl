@@ -51,7 +51,7 @@ nav {
     background-size: cover;
 }
 .srodek {
-    visibility: hidden;
+    display: none;
 }
 
 /* Sidebar Panels */
@@ -116,7 +116,7 @@ footer {
     .lewy, .prawy, .srodek {
         width: 33vw;
         padding: 10vw 6vw;
-        visibility: visible; /* Pokazuje srodkowy div dla ekranow o 1920 pikselach i wiecej szerokosci */
+        display: show; /* Pokazuje srodkowy div dla ekranow o 1920 pikselach i wiecej szerokosci */
     }
 }
 a {
