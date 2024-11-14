@@ -51,8 +51,8 @@ nav {
     background-size: cover;
 }
 #article {
-    background-color: white;
-    color: black;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 .srodek {
     display: none;
