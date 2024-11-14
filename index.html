@@ -31,8 +31,8 @@
         <section class="lewy">
             <h2>Kwidzyń na Wikipedi</h2><br>
             <script>
-  $(document).ready(function(){
-    $.ajax({
+  jQuery(document).ready(function(){
+    jQuery.ajax({
       type: "GET",
       url: "https://pl.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Kwidzyn&origin=*",
       contentType: "application/json; charset=utf-8",
