@@ -31,7 +31,7 @@
         <section class="lewy">
             <h2>Kwidzyń na Wikipedi</h2><br>
             <div id="article"></div>
-            <script>
+            script>
   jQuery(document).ready(function(){
     jQuery.ajax({
       type: "GET",
@@ -40,12 +40,25 @@
       async: true,
       dataType: "json",
       success: function (data) {
+        // Extract the HTML content from the response
         var markup = data.parse.text["*"];
         var blurb = $('<div></div>').html(markup);
-        $('#article').html(blurb.find('p')); // Or blurb.find('p:first') for only the first paragraph
+
+        // Update image URLs to be absolute so they load correctly
+        blurb.find('img').each(function() {
+            var src = $(this).attr('src');
+            if (src && src.startsWith("//")) {
+                $(this).attr('src', "https:" + src);
+            } else if (src && src.startsWith("/")) {
+                $(this).attr('src', "https://pl.wikipedia.org" + src);
+            }
+        });
+
+        // Insert the content into the HTML
+        $('#article').html(blurb);
       },
       error: function () {
-        console.error("Failed to retrieve data.");
+        console.error("Błąd przy pobieraniu danych.");
       }
     });
   });
