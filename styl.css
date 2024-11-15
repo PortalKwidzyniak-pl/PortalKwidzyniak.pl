@@ -55,15 +55,15 @@ nav {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: rgba(249, 249, 249, 0.5); /* Lekko przezroczyste tło */
-    padding: 20px;
+    padding: 10vw;
 }
 
 /* Nagłówki */
 #article h2, #article h3, #article h4 {
     color: #444;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 /* Linki */
@@ -81,13 +81,13 @@ nav {
 #article img {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 5vw 0;
 }
 
 /* Listy */
 #article ul, #article ol {
-    padding-left: 20px;
-    margin-bottom: 10px;
+    padding-left: 10vw;
+    margin-bottom: 5vh;
 }
 
 #article li {
@@ -98,13 +98,13 @@ nav {
 #article table {
     width: 100%;
     border-collapse: collapse;
-    margin: 15px 0;
+    margin: 7vw 0;
     border: 1px solid rgba(204, 204, 204, 0.5); /* Ustawione przezroczyste tło */
 }
 
 #article th, #article td {
     border: 1px solid rgba(221, 221, 221, 0.5);
-    padding: 8px;
+    padding: 4vw;
     text-align: left;
 }
 
@@ -121,8 +121,8 @@ nav {
 
 #article blockquote {
     border-left: 4px solid rgba(204, 204, 204, 0.5);
-    padding-left: 10px;
-    margin: 10px 0;
+    padding-left: 5vw;
+    margin: 5vw 0;
     color: #555;
     font-style: italic;
     background-color: rgba(248, 248, 248, 0.5);
@@ -132,15 +132,15 @@ nav {
 #article p {
     text-align: justify;
     line-height: 1.8;
-    margin-bottom: 10px;
+    margin-bottom: 5vh;
 }
 
 /* Stylizacja specjalnych elementów, jak infoboxy */
 #article .infobox {
     border: 1px solid rgba(221, 221, 221, 0.5);
-    padding: 10px;
+    padding: 5vw;
     background-color: rgba(248, 248, 248, 0.5);
-    margin: 15px 0;
+    margin: 7cw 0;
 }
 }
 .srodek {
