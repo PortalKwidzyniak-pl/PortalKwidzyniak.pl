@@ -93,6 +93,15 @@ header {
   content: 'N';
 }
 
+.box:nth-child(8)::before {
+  content: 'I';
+}
+.box:nth-child(9)::before {
+  content: 'A';
+}
+.box:nth-child(10)::before {
+  content: 'K';
+}
 
 
 .button:hover .box:before {
