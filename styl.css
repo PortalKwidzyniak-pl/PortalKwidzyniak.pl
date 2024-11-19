@@ -36,8 +36,6 @@ header {
 .center-div {
     display: flex;
     justify-content: center; /* Centers horizontally */
-    height: 100px; /* Optional: adjust height */
-    background-color: #f0f0f0; /* Optional */
 }
 .button {
 padding: 10px 20px;
