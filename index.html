@@ -19,18 +19,41 @@
     <header>
         <h1>
 <div class="center-div">
-<div class="button">
-    <div class="box">&nbsp;</div>
-    <div class="box">&nbsp;</div>
-    <div class="box">P</div>
-    <div class="box">O</div>
-    <div class="box">R</div>
-    <div class="box">T</div>
-    <div class="box">A</div>
-    <div class="box">L</div>
-    <div class="box">&nbsp;</div>
-    <div class="box">&nbsp;</div>
-</div>
+<script>
+        const boxes = [
+            { content: '', before: 'K', fromTop: false },
+            { content: '', before: 'W', fromTop: true },
+            { content: 'P', before: 'I', fromTop: false },
+            { content: 'O', before: 'D', fromTop: true },
+            { content: 'R', before: 'Z', fromTop: false },
+            { content: 'T', before: 'Y', fromTop: true },
+            { content: 'A', before: 'N', fromTop: false },
+            { content: 'L', before: 'I', fromTop: true },
+            { content: '', before: 'A', fromTop: false },
+            { content: '', before: 'K', fromTop: true },
+        ];
+
+        const button = document.getElementById('portal-button');
+
+        boxes.forEach(box => {
+            const boxElement = document.createElement('div');
+            boxElement.className = 'box';
+            boxElement.textContent = box.content;
+
+            const overlay = document.createElement('div');
+            overlay.className = `box-overlay ${box.fromTop ? 'box-overlay-top' : 'box-overlay-bottom'}`;
+            overlay.textContent = box.before;
+
+            boxElement.appendChild(overlay);
+            button.appendChild(boxElement);
+        });
+
+        button.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                button.classList.toggle('hovered');
+            }
+        });
+    </script>
 </div>
 </h1>
         <h3>
