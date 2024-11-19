@@ -36,14 +36,19 @@ header {
 }
 
 .button {
-      background-color: rgba(255,255,255,0.4);
-      padding: 1rem 2rem;
-      border-radius: 1.25rem;
+    display: inline-flex; /* Ensures horizontal alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    background-color: rgba(255, 255, 255, 0.4); /* Matches the tint in .card */
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
     font-size: 16px;
     color: #fff;
     text-align: center;
     cursor: pointer;
-}
+    border: none; /* Optional: Ensures no unwanted borders */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 
 .box {
   width: 35px;
@@ -118,6 +123,8 @@ header {
 
 .button:hover .box:before {
   transform: translateY(0);
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly lighter on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
 }
     
 /* From Uiverse.io by kennyotsu */ 
