@@ -64,6 +64,28 @@ padding: 10px 20px;
   background: #fff;
   overflow: hidden;
 }
+        .box-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6;
+            color: white;
+            transition: transform 0.4s;
+        }
+        .box-overlay-top {
+            transform: translateY(-100%);
+        }
+        .box-overlay-bottom {
+            transform: translateY(100%);
+        }
+        .button:hover .box-overlay {
+            transform: translateY(0);
+        }
 
 .box:before {
   color: #fff:
