@@ -33,9 +33,6 @@ header {
     background-color: rgba(0,0,0,0.5);
 }
 /* From Uiverse.io by mrhyddenn */
-.center-div {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
 }
 
 .button {
@@ -131,6 +128,8 @@ header {
   background-color: rgba(255,255,255,0.4);
   padding: 1rem 2rem;
   border-radius: 1.25rem;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
 }
 .loader {
   color: rgb(124, 124, 124);
