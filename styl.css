@@ -33,7 +33,21 @@ header {
     background-color: rgba(0,0,0,0.5);
 }
 /* From Uiverse.io by mrhyddenn */
+.center-div {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    height: 100px; /* Optional: adjust height */
+    background-color: #f0f0f0; /* Optional */
+}
 .button {
+padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
   display: flex;
 }
 
