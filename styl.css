@@ -67,7 +67,7 @@ padding: 10px 20px;
 }
 
 .box:before {
-  color: #fff:
+  color: #fff;
   content: "K";
   position: absolute;
   top: 0;
