@@ -147,6 +147,9 @@ nav {
     background-color: rgba(249, 249, 249, 0.7); /* Lekko przezroczyste tło */
     padding: 4vw;
 }
+#article * {
+    max-width: 90vw;
+}
 
 /* Nagłówki */
 #article h2, #article h3, #article h4 {
