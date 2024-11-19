@@ -149,7 +149,7 @@ padding: 10px 20px;
 .card {
   /* color used to softly clip top and bottom of the .words container */
   --bg-color: #212121;
-  background-color: var(--bg-color);
+  background-color: #007bff;
   padding: 1rem 2rem;
   border-radius: 1.25rem;
 }
