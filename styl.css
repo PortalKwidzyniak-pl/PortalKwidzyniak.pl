@@ -37,69 +37,94 @@ header {
     display: flex;
     justify-content: center; /* Centers horizontally */
 }
-Show Menu
 
-Javascript button effect
-
-Share
-More options
-New Chat
-Make in javascript button made with div class button activate javascript that makes transformY(100%) on box div after 3 seconds
-
-
-
-
-I'll create a JavaScript code snippet that includes a button made with a div element and a box div. When the button is clicked, it will trigger a JavaScript function that applies a transform: translateY(100%) to the box div after a 3-second delay.
-
-Here's the implementation:
-
-
-Let's break down the code:
-
-We import the necessary hooks from React: useState and useCallback.
-We define a functional component called Component.
-Inside the component, we use the useState hook to create a state variable isTransformed and its setter function setIsTransformed.
-We define a handleClick function using useCallback. This function sets a timeout that will set isTransformed to true after 3 seconds (3000 milliseconds).
-In the JSX, we create two main elements:
-
-A div representing the box, which uses inline styles to apply the transform based on the isTransformed state.
-A div acting as a button, styled using Tailwind CSS classes.
-The button div has an onClick handler that triggers the handleClick function when clicked.
-We've also added keyboard accessibility to the button div by giving it a tabIndex and an onKeyDown event that triggers the handleClick function when the Enter key is pressed.
-The box uses a transition for smooth animation when the transform is applied.
-When you click the "Transform Box" button, it will trigger the JavaScript function that waits for 3 seconds and then applies the translateY(100%) transform to the box, making it move down by 100% of its height.
-
-This component is responsive and accessible, following best practices for React development. You can easily integrate this into your Next.js application or modify it further as needed.
-
-
-
-
-
-.button { padding: 10px 20px; font-size: 16px; background-color: 
-#007bff; color: #fff; text-align: center; border-radius: 5px; cursor: pointer; display: inline-block; display: flex; }
-
-.box { width: 35px; height: 40px; display: flex; justify-content: center; align-items: center; font-size: 15px; font-weight: 700; color: 
-#007bff; transition: all .8s; cursor: pointer; position: relative; background: #fff; overflow: hidden; }
-
-.box:before { color: #fff: content: "K"; position: absolute; top: 0; background: 
-#007bff; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; transform: translateY(100%); transition: transform .4s; }
-
-.box:nth-child(2)::before { transform: translateY(-100%); content: 'W'; }
-
-.box:nth-child(3)::before { content: 'I'; }
-
-.box:nth-child(4)::before { transform: translateY(-100%); content: 'D'; }
-
-.box:nth-child(5)::before { content: 'Z'; }
-
-.box:nth-child(6)::before { transform: translateY(-100%); content: 'Y'; }
-
-.box:nth-child(7)::before { content: 'N'; }
-
-.box:nth-child(8)::before { transform: translateY(-100%); content: 'I'; } .box:nth-child(9)::before { content: 'A'; } .box:nth-child(10)::before { transform: translateY(-100%); content: 'K'; }
-
-.button:hover .box:before { transform: translateY(0); }
+.button {
+padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+  display: flex;
 }
+
+.box {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #007bff;
+  transition: all .8s;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.box:before {
+  color: #fff:
+  content: "K";
+  position: absolute;
+  top: 0;
+  background: #007bff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform .4s;
+}
+
+.box:nth-child(2)::before {
+  transform: translateY(-100%);
+  content: 'W';
+}
+
+.box:nth-child(3)::before {
+  content: 'I';
+}
+
+.box:nth-child(4)::before {
+  transform: translateY(-100%);
+  content: 'D';
+}
+
+.box:nth-child(5)::before {
+  content: 'Z';
+}
+
+.box:nth-child(6)::before {
+  transform: translateY(-100%);
+  content: 'Y';
+}
+
+.box:nth-child(7)::before {
+  content: 'N';
+}
+
+.box:nth-child(8)::before {
+  transform: translateY(-100%);
+  content: 'I';
+}
+.box:nth-child(9)::before {
+  content: 'A';
+}
+.box:nth-child(10)::before {
+  transform: translateY(-100%);
+  content: 'K';
+}
+
+
+.button:hover .box:before {
+  transform: translateY(0);
+}
+    
 /* From Uiverse.io by kennyotsu */ 
 .card {
   /* color used to softly clip top and bottom of the .words container */
