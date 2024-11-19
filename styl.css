@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    cursor: progress;
+    cursor: url(".png"), auto;
     box-sizing: border-box;
 }
 
@@ -33,22 +33,22 @@ header {
     background-color: rgba(0,0,0,0.5);
 }
 /* From Uiverse.io by mrhyddenn */
+.center-div {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
 }
 
 .button {
-    display: inline-flex; /* Ensures horizontal alignment */
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    background-color: rgba(255, 255, 255, 0.4); /* Matches the tint in .card */
-    padding: 1rem 2rem;
-    border-radius: 1.25rem;
+padding: 10px 20px;
     font-size: 16px;
+    background-color: #007bff;
     color: #fff;
     text-align: center;
+    border-radius: 5px;
     cursor: pointer;
-    border: none; /* Optional: Ensures no unwanted borders */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: inline-block;
+  display: flex;
+}
 
 .box {
   width: 35px;
@@ -123,18 +123,14 @@ header {
 
 .button:hover .box:before {
   transform: translateY(0);
-    background-color: rgba(255, 255, 255, 0.6); /* Slightly lighter on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
 }
-    
+
 /* From Uiverse.io by kennyotsu */ 
-.card{
+.card {
   /* color used to softly clip top and bottom of the .words container */
   background-color: rgba(255,255,255,0.4);
   padding: 1rem 2rem;
   border-radius: 1.25rem;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
 }
 .loader {
   color: rgb(124, 124, 124);
@@ -338,7 +334,6 @@ nav {
 
 /* Sidebar Panels */
 .lewy, .prawy, .srodek {
-    max-width: 33vw;
     text-align: center;
     flex: 1;
     padding: 5vw;
@@ -389,6 +384,20 @@ footer {
     }
     .srodek {
         visibility: hidden; /* Schowany srodkowy div */
+    }
+}
+@media (min-width: 1920px) {
+    header, nav, footer {
+        width: 100vw;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .lewy, .prawy, .srodek {
+        width: 33vw;
+        padding: 10vw 6vw;
+        display: show; /* Pokazuje srodkowy div dla ekranow o 1920 pikselach i wiecej szerokosci */
+        float: left;
     }
 }
 a {
