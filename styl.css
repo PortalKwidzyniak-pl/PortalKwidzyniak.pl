@@ -103,8 +103,6 @@ This component is responsive and accessible, following best practices for React 
 /* From Uiverse.io by kennyotsu */ 
 .card {
   /* color used to softly clip top and bottom of the .words container */
-  --bg-color: #212121;
-  background-color: #007bff;
   padding: 1rem 2rem;
   border-radius: 1.25rem;
 }
