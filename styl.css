@@ -232,7 +232,7 @@ nav {
 }
 /* Styl ogólny kontenera */
 #article {
-    font-family: Arial, sans-serif;
+    font-size: 12px;
     color: #333;
     background-color: rgba(249, 249, 249, 0.7); /* Lekko przezroczyste tło */
     padding: 4vw;
