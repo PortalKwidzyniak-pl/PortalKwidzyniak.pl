@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    cursor: url(".png"), auto;
+    cursor: wait;
     box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body, html {
 }
 
 /* Header and Nav Styling */
-header, nav, footer, .lewy, .prawy {
+header, nav, footer, .lewy, .prawy, aside{
     background-attachment: fixed;
     background-image: url(kwidzyn.png);
 }
