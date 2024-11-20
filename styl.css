@@ -33,6 +33,7 @@ header {
     color: white;
     background-color: rgba(0,0,0,0.5);
 }
+
 /* From Uiverse.io by mrhyddenn */
 .center-div {
     display: flex;
@@ -40,7 +41,7 @@ header {
 }
 
 .button {
-padding: 10px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     background-color: #007bff;
     color: #fff;
@@ -48,168 +49,172 @@ padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
-  display: flex;
+    display: flex;
 }
 
 .box {
-  width: 35px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-weight: 700;
-  color: #007bff;
-  transition: all .8s;
-  cursor: pointer;
-  position: relative;
-  background: #fff;
-  overflow: hidden;
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #007bff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
 }
 
 .box:before {
-  color: #fff;
-  content: "K";
-  position: absolute;
-  top: 0;
-  background-color: #007bff;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(100%);
-  transition: transform .4s;
+    color: #fff;
+    content: "K";
+    position: absolute;
+    top: 0;
+    background-color: #007bff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
 }
 
 .box:nth-child(2)::before {
-  transform: translateY(-100%);
-  content: 'W';
+    transform: translateY(-100%);
+    content: 'W';
 }
 
 .box:nth-child(3)::before {
-  content: 'I';
+    content: 'I';
 }
 
 .box:nth-child(4)::before {
-  transform: translateY(-100%);
-  content: 'D';
+    transform: translateY(-100%);
+    content: 'D';
 }
 
 .box:nth-child(5)::before {
-  content: 'Z';
+    content: 'Z';
 }
 
 .box:nth-child(6)::before {
-  transform: translateY(-100%);
-  content: 'Y';
+    transform: translateY(-100%);
+    content: 'Y';
 }
 
 .box:nth-child(7)::before {
-  content: 'N';
+    content: 'N';
 }
 
 .box:nth-child(8)::before {
-  transform: translateY(-100%);
-  content: 'I';
+    transform: translateY(-100%);
+    content: 'I';
 }
+
 .box:nth-child(9)::before {
-  content: 'A';
+    content: 'A';
 }
+
 .box:nth-child(10)::before {
-  transform: translateY(-100%);
-  content: 'K';
+    transform: translateY(-100%);
+    content: 'K';
 }
 
 
 .button:hover .box:before {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 /* From Uiverse.io by kennyotsu */ 
 .card {
-  /* color used to softly clip top and bottom of the .words container */
+    /* color used to softly clip top and bottom of the .words container */
 }
+
 .loader {
-  color: rgb(124, 124, 124);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 40px;
-  padding: 10px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 8px;
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
 }
 
 .words {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
+
 .words::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    var(--bg-color) 10%,
-    transparent 30%,
-    transparent 70%,
-    var(--bg-color) 90%
-  );
-  z-index: 20;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        var(--bg-color) 10%,
+        transparent 30%,
+        transparent 70%,
+        var(--bg-color) 90%
+    );
+    z-index: 20;
 }
 
 .word {
-  display: block;
-  height: 100%;
-  padding-left: 6px;
-  color: #956afa;
-  animation: spin_4991 4s infinite;
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    animation: spin_4991 4s infinite;
 }
 
 @keyframes spin_4991 {
-  10% {
-    -webkit-transform: translateY(-102%);
-    transform: translateY(-102%);
-  }
+    10% {
+        -webkit-transform: translateY(-102%);
+        transform: translateY(-102%);
+    }
 
-  25% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
+    25% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
 
-  35% {
-    -webkit-transform: translateY(-202%);
-    transform: translateY(-202%);
-  }
+    35% {
+        -webkit-transform: translateY(-202%);
+        transform: translateY(-202%);
+    }
 
-  50% {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%);
-  }
+    50% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
 
-  60% {
-    -webkit-transform: translateY(-302%);
-    transform: translateY(-302%);
-  }
+    60% {
+        -webkit-transform: translateY(-302%);
+        transform: translateY(-302%);
+    }
 
-  75% {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%);
-  }
+    75% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
 
-  85% {
-    -webkit-transform: translateY(-402%);
-    transform: translateY(-402%);
-  }
+    85% {
+        -webkit-transform: translateY(-402%);
+        transform: translateY(-402%);
+    }
 
-  100% {
-    -webkit-transform: translateY(-400%);
-    transform: translateY(-400%);
-  }
+    100% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
 }
 
 
@@ -230,16 +235,17 @@ nav {
     background-position: center;
     background-size: cover;
 }
+
 /* Styl ogólny kontenera */
 #article {
     font-size: 12px;
     color: #333;
     background-color: rgba(249, 249, 249, 0.7); /* Lekko przezroczyste tło */
     padding: 4vw;
-    max-width: 33vw;
+    width: calc(100vw - var(--lewy-width) - 2vw);
 }
 #article * {
-    max-width: 90vw;
+    max-width: 100%;
 }
 
 /* Nagłówki */
@@ -280,7 +286,7 @@ nav {
 
 /* Tabele */
 #article table {
-    width: 70vw;
+    width: 100%;
     border-collapse: collapse;
     margin: 2vw 0;
     border: 1px solid rgba(204, 204, 204, 0.5); /* Ustawione przezroczyste tło */
@@ -326,13 +332,14 @@ nav {
     background-color: rgba(248, 248, 248, 0.5);
     margin: 4vw 0;
 }
-}
+
 /* Sidebar Panels */
 .lewy, .prawy, aside {
     text-align: center;
     flex: 1;
     padding: 5vw;
     color: white;
+    --lewy-width: 33vw; /* Definiowanie szerokości .lewy */
 }
 
 .formnav {
@@ -347,7 +354,7 @@ nav {
 
 /* Footer */
 footer {
-    clear:both;
+    clear: both;
     background-color: #0A2043;
     width: 100vw;
     margin: 0 auto;
@@ -366,7 +373,7 @@ footer {
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     * {
-    clear:both;
+        clear: both;
     }
     header, nav, footer {
         width: 100vw;
@@ -374,14 +381,16 @@ footer {
     .container {
         flex-direction: column;
     }
-    .lewy, .prawy, aside{
+    .lewy, .prawy, aside {
         width: 100vw;
         padding: 3vw 2vw; /* Adjust padding for mobile */
+        --lewy-width: 100vw; /* Adjust sidebar width for mobile */
     }
-    #article{
-        max-width: 100vw;
+    #article {
+        width: calc(100vw - 4vw); /* Adjusting width for mobile */
     }
 }
+
 @media (min-width: 1920px) {
     header, nav, footer {
         width: 100vw;
@@ -394,13 +403,19 @@ footer {
         max-width: 33vw;
         padding: 15vw 3vw;
         float: left;
+        --lewy-width: 33vw; /* Definiowanie szerokości .lewy dla dużych ekranów */
+    }
+    #article {
+        width: calc(100vw - 33vw - 2vw); /* Adjusting width for large screens */
     }
 }
+
 a {
     color: #4CAF50;
 }
+
 a:hover {
-    text-shadow: 0 0 3px #d0f742
+    text-shadow: 0 0 3px #d0f742;
 }
 
 form {
@@ -410,7 +425,7 @@ form {
 .register-container {
     background-image: url(registrybackground.png);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border-radius: 8vw;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
     padding: 10vw;
