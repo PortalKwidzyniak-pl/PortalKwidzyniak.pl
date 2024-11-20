@@ -26,6 +26,7 @@ header, nav, footer, .lewy, .prawy {
 
 header {
     width: 100vw; /* Slight padding on each side */
+    background-color: rgba(255,255,255,0.4);
     margin: 0 auto;
     text-align: center;
     padding: 2vh 0; /* Vertical padding */
@@ -128,9 +129,6 @@ padding: 10px 20px;
 /* From Uiverse.io by kennyotsu */ 
 .card {
   /* color used to softly clip top and bottom of the .words container */
-  background-color: rgba(255,255,255,0.4);
-  padding: 1rem 2rem;
-  border-radius: 1.25rem;
 }
 .loader {
   color: rgb(124, 124, 124);
