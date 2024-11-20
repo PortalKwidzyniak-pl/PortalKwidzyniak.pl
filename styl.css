@@ -386,6 +386,7 @@ footer {
     }
     .lewy, .prawy, aside {
         width: 33vw;
+        max-width: 33vw;
         padding: 15vw 3vw;
         float: left;
     }
