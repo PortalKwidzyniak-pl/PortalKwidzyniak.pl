@@ -326,12 +326,8 @@ nav {
     margin: 4vw 0;
 }
 }
-.srodek {
-    display: none;
-}
-
 /* Sidebar Panels */
-.lewy, .prawy, .srodek {
+.lewy, .prawy, aside {
     text-align: center;
     flex: 1;
     padding: 5vw;
@@ -376,12 +372,9 @@ footer {
     .container {
         flex-direction: column;
     }
-    .lewy, .prawy {
+    .lewy, .prawy, aside{
         width: 100vw;
         padding: 3vw 2vw; /* Adjust padding for mobile */
-    }
-    .srodek {
-        visibility: hidden; /* Schowany srodkowy div */
     }
 }
 @media (min-width: 1920px) {
@@ -391,10 +384,9 @@ footer {
     .container {
         flex-direction: column;
     }
-    .lewy, .prawy, .srodek {
+    .lewy, .prawy, aside {
         width: 33vw;
-        padding: 10vw 6vw;
-        display: show; /* Pokazuje srodkowy div dla ekranow o 1920 pikselach i wiecej szerokosci */
+        padding: 15vw 3vw;
         float: left;
     }
 }
