@@ -1,5 +1,6 @@
 /* Reset and Global Styling */
 * {
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -19,7 +20,7 @@ body, html {
 }
 
 /* Header and Nav Styling */
-header, nav, footer, .lewy, .prawy, aside{
+header, nav, footer, .lewy, .prawy, .prefooter{
     background-attachment: fixed;
     background-image: url(kwidzyn.png);
 }
@@ -334,12 +335,12 @@ nav {
 }
 
 /* Sidebar Panels */
-.lewy, .prawy, aside {
+.lewy, .prawy{
     text-align: center;
     flex: 1;
     padding: 5vw;
     color: white;
-    --lewy-width: 33vw; /* Definiowanie szerokości .lewy */
+    width:50vw;
 }
 
 .formnav {
@@ -353,6 +354,9 @@ nav {
 }
 
 /* Footer */
+.prefooter {
+height:20vh;
+}
 footer {
     clear: both;
     background-color: #0A2043;
@@ -381,7 +385,7 @@ footer {
     .container {
         flex-direction: column;
     }
-    .lewy, .prawy, aside {
+    .lewy, .prawy {
         width: 100vw;
         padding: 3vw 2vw; /* Adjust padding for mobile */
         --lewy-width: 100vw; /* Adjust sidebar width for mobile */
@@ -398,15 +402,13 @@ footer {
     .container {
         flex-direction: column;
     }
-    .lewy, .prawy, aside {
-        width: 33vw;
-        max-width: 33vw;
+    .lewy, .prawy {
+        width: 50vw;
         padding: 15vw 3vw;
         float: left;
-        --lewy-width: 33vw; /* Definiowanie szerokości .lewy dla dużych ekranów */
     }
     #article {
-        width: calc(100vw - 33vw - 2vw); /* Adjusting width for large screens */
+        width: calc(100vw - 50vw - 2vw); /* Adjusting width for large screens */
     }
 }
 
