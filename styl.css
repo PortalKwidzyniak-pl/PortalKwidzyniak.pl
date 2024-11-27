@@ -340,7 +340,7 @@ nav {
     flex: 1;
     padding: 5vw;
     color: white;
-    width:50vw;
+    width:  50vw;
 }
 .lewy {
     overflow-y: auto;
@@ -358,8 +358,8 @@ nav {
 
 /* Footer */
 .prefooter {
-height:20vh;
-overflow-y:auto;
+height: 20vh;
+overflow-y: auto;
 }
 footer {
     clear: both;
@@ -392,7 +392,6 @@ footer {
     .lewy, .prawy {
         width: 100vw;
         padding: 3vw 2vw; /* Adjust padding for mobile */
-        --lewy-width: 100vw; /* Adjust sidebar width for mobile */
     }
     #article {
         width: calc(100vw - 4vw); /* Adjusting width for mobile */
