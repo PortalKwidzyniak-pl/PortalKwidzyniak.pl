@@ -342,6 +342,9 @@ nav {
     color: white;
     width:50vw;
 }
+.lewy {
+    overflow-y: auto;
+}
 
 .formnav {
     background-color: blue;
